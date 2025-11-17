@@ -609,6 +609,9 @@ class CIFData(Dataset):
             #print(cif_id, atom_fea.shape, torch.Tensor(local_fea).shape)
             atom_fea = torch.hstack([atom_fea, torch.Tensor(local_fea)])
 
+        # ADD EXPERIMENTAL CRYSTAL REDUCTION FEATURES
+
+
 
         # return format for DataLoader
         target = torch.Tensor([float(target)])
